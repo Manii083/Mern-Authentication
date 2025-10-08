@@ -14,12 +14,12 @@
   "author": "mani",
   "type": "module",
   "main": "server.js",
-  "scripts": {
-    "install-client": "cd Client && npm install",
-    "install-server": "cd Server && npm install",
-    "build-client": "cd Client && npm run build",
-    "build": "npm run install-client && npm run install-server && npm run build-client",
-    "start": "npm run build && npm run start-server",
-    "start-server": "cd Server && npm start"
-  }
+ "scripts": {
+  "install-client": "cd Client && npm install",
+  "install-server": "cd Server && npm install",
+  "build-client": "cd Client && npm run build",
+  "build": "npm run install-client && npm run install-server && npm run build-client",
+  "start": "npm run build && npm run start-server",
+  "start-server": "cd Server && npm start"
+}
 }
