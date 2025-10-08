@@ -1,14 +1,16 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express backend for MERN Auth app",
   "license": "ISC",
   "author": "mani",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "cd ../client && npm install && npm run build"
+
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -21,5 +23,8 @@
   "devDependencies": {
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
