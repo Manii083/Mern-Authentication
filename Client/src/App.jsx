@@ -8,15 +8,16 @@ import axios from 'axios';
 
 function App() {
   const [user, setUser] = useState(null);
-  const [eroor, setError] = useState("");
+  const [error, setError] = useState("");
+  console.log(user);
 
 useEffect(() => {
   const fetchUser = async () => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        const res = await axios.get("/api/users/me", {
-          Headers: { Authorization: `Bearer ${token}`},
+        const res = await axios.get("/api/auth/me", {
+          headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data);
       } catch (error) {
@@ -33,8 +34,8 @@ useEffect(() => {
       < Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/login' element={<Login/>} />
-        <Route path='/register' element={<Register/>} />
+        <Route path='/login' element={<Login setUser={setUser}/>} />
+        <Route path='/register' element={<Register setUser={setUser}/>} />
       </Routes>
     </Router>
   )
