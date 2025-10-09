@@ -35,4 +35,16 @@ Registered users will be stored in mongoDB database
 
 login with correct credentials
 
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB (local or Atlas)
+- npm or yarn
+
+### Clone the Repository
+```bash
+git clone https://github.com/Manii083/Mern-Authentication.git
+cd Mern-Authentication
+
 
