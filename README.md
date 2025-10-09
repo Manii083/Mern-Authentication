@@ -31,9 +31,13 @@ Environment: dotenv
 
 Registered users will be stored in mongoDB database 
 
-<img width="959" height="477" alt="image" src="https://github.com/user-attachments/assets/11bd9256-e40a-4d6f-8d69-46d7f0450827" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/25867864-0e7a-41cf-a15f-b80bb1abac6e" />
+
 
 login with correct credentials
+
+<img width="1919" height="960" alt="Screenshot 2025-10-09 134501" src="https://github.com/user-attachments/assets/a86bb8f3-90e9-476a-8a6a-7825995ca801" />
+
 
 ## 📦 Installation
 
