@@ -18,7 +18,7 @@ const Navbar = ({ user, setUser }) => {
           to="/"
           className="text-2xl font-bold tracking-wide hover:text-blue-400 transition duration-300"
         >
-          MERN Authentication
+           Authentication Application
         </Link>
 
         {/* Right Section */}
