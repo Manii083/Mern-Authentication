@@ -6,6 +6,14 @@ import { connectDB } from "./config/db.js";
 dotenv.config();
 const app = express();
 
+import cors from "cors";
+
+app.use(cors({
+  origin: "*",
+  credentials: true
+}));
+
+
 // Middleware
 app.use(express.json());
 
